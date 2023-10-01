@@ -4,6 +4,13 @@
 ![CICD Workflow status](https://github.com/lorocks/TestDrivenDev/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg) [![codecov](https://codecov.io/gh/lorocks/TestDrivenDev/branch/main/graph/badge.svg)](https://codecov.io/gh/lorocks/TestDrivenDev) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 
+## Author - Part 1
+# Solo Programmer 
+Name: Lowell Aaron Lobo 
+GitHub: lorocks
+
+
+
 ## Overview
 
 Simple starter C++ project with:
