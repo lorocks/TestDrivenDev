@@ -2,6 +2,4 @@
 
 #include <iostream>
 
-void dummy() {
-  std::cout << "HI" << std::endl;
-}
+using namespace std;
