@@ -3,22 +3,7 @@
 # C++ Boilerplate v2 Badges
 ![CICD Workflow status](https://github.com/lorocks/TestDrivenDev/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg) [![codecov](https://codecov.io/gh/lorocks/TestDrivenDev/branch/main/graph/badge.svg)](https://codecov.io/gh/lorocks/TestDrivenDev) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-
-## Author - Part 1
-# Solo Programmer 
-Name: Lowell Aaron Lobo 
-<br>
-GitHub: lorocks
-
-## UML Diagrams
-# Main Activity Diagram
-![Activity Diagram for main functionality](https://github.com/lorocks/TestDrivenDev/blob/main/images/Main%20activity%20diagram.PNG)
-
-# compute method Activity Diagram
-![Activity Diagram for the compute method inside PID class](https://github.com/lorocks/TestDrivenDev/blob/main/images/compute%20method%20activity%20diagram.PNG)
-
-
-## Overview
+# Overview
 
 Simple starter C++ project with:
 
@@ -27,7 +12,21 @@ Simple starter C++ project with:
 
 To implement a PID controller in discrete time
 
-## Standard install via command-line
+# Author - Part 1
+## Solo Programmer 
+Name: Lowell Aaron Lobo 
+<br>
+GitHub: lorocks
+
+# UML Diagrams
+## Main Activity Diagram
+![Activity Diagram for main functionality](https://github.com/lorocks/TestDrivenDev/blob/main/images/Main%20activity%20diagram.PNG)
+
+## compute method Activity Diagram
+![Activity Diagram for the compute method inside PID class](https://github.com/lorocks/TestDrivenDev/blob/main/images/compute%20method%20activity%20diagram.PNG)
+
+
+# Standard install via command-line
 ```bash
 # Make sure to be inside the TestDrivenDev directory before running the commands below
 # Create make files
@@ -53,12 +52,12 @@ To implement a PID controller in discrete time
 ```
 
 
-## To make and view Doxygen Documentation:
-# Download Doxygen
+# To make and view Doxygen Documentation:
+## Download Doxygen
 ```bash
   sudo apt-get install doxygen
 ```
-# Get documentation
+## Get documentation
 ```bash
   doxygen dconfig
 ```
@@ -66,7 +65,7 @@ To implement a PID controller in discrete time
 ref: https://cmake.org/cmake/help/latest/manual/cmake.1.html
 
 
-## Building for code coverage (for assignments beginning in Week 4)
+# Building for code coverage (for assignments beginning in Week 4)
 
 ```bash
 # if you don't have gcovr or lcov installed, do:
@@ -93,7 +92,7 @@ This generates a index.html page in the build/app_coverage sub-directory that ca
 ```
 
 
-## compile_commands.json Errors
+# compile_commands.json Errors
 In case of errors with generation of compile_commands.json file,
 Delete the compile_commands.json file and run,
 ```bash
