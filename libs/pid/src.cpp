@@ -1,12 +1,12 @@
 #include "pid.hpp"
 
-const double const PID::Kp(){
+const double PID::getKp(){
   return 1;
 }
-const double const PID::Kp(){
+const double PID::getKd(){
   return 1;
 }
-const double const PID::Kp(){
+const double PID::getKi(){
   return 1;
 }
 double PID::compute(){
