@@ -12,8 +12,8 @@ Simple starter C++ project with:
 
 To implement a PID controller in discrete time
 
-# Author - Part 1
-## Solo Programmer 
+# Authors
+## Part 1 - Solo Programmer 
 Name: Lowell Aaron Lobo 
 <br>
 GitHub: lorocks
