@@ -19,6 +19,9 @@ Name: Lowell Aaron Lobo
 GitHub: lorocks
 
 # UML Diagrams
+## Class Diagram
+![PID Class Diagram](https://github.com/lorocks/TestDrivenDev/blob/main/images/class%20diagram.PNG)
+
 ## Main Activity Diagram
 ![Activity Diagram for main functionality](https://github.com/lorocks/TestDrivenDev/blob/main/images/Main%20activity%20diagram.PNG)
 
