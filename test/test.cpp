@@ -48,6 +48,22 @@ TEST(dummy_test_compute_overtime, testing_compute_with_time){
 
 /**
  * @brief Construct a new TEST object
+ * The test object checkes to see if returned Kp value is as intended
+ */
+TEST(dummy_test_getKp_value, testing_get_methods) {
+  EXPECT_EQ(test.getKp(), 0.5);
+}
+
+/**
+ * @brief Construct a new TEST object
+ * The test object checkes to see if returned Kd value is as intended
+ */
+TEST(dummy_test_getKd_value, testing_get_methods) {
+  EXPECT_EQ(test.getKd(), 0.1);
+}
+
+/**
+ * @brief Construct a new TEST object
  * The test object checkes to see if returned Ki value is as intended
  */
 TEST(dummy_test_getKi_value, testing_get_methods) {

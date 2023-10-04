@@ -77,7 +77,7 @@ class PID{
          * 
          * @return double 
          */
-        double compute(double, double, double);
+        double compute(double setPoint, double pVariable, double dtime);
         /**
          * @brief Destroy the PID object
          * 
