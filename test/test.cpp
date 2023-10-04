@@ -36,10 +36,11 @@ TEST(dummy_test_compute_overtime, testing_compute_with_time){
    * @brief Temporary varaibles to store the control output and process variable
    * 
    */
-  double pvar, control_output;
+  double control_output;
+  double pvar = 0;
 
   for (int i = 0; i<5; i++){
-    control_output = test.compute(50, 0, 0.1*i);
+    control_output = test.compute(50, pvar, 0.1);
     pvar += control_output;
   }
   
