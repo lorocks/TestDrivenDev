@@ -44,7 +44,7 @@ TEST(dummy_test_compute_overtime, testing_compute_with_time){
     pvar += control_output;
   }
   
-  EXPECT_DOUBLE_EQ(std::round(control_output*100000)/100000, 5.00559);
+  EXPECT_DOUBLE_EQ(std::round(control_output*1000000)/1000000, 5.005596);
 }
 
 /**
