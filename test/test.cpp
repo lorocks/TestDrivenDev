@@ -44,7 +44,7 @@ TEST(dummy_test_compute_overtime, testing_compute_with_time){
     pvar += control_output;
   }
   
-  EXPECT_DOUBLE_EQ(control_output, 5.005596);
+  EXPECT_DOUBLE_EQ(control_output, 5.0055961599999943);
 }
 
 /**
