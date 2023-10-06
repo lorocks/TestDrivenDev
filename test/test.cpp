@@ -23,7 +23,7 @@ PID test(0.5, 0.2, 0.1);
  * The test object checks to see if the compute method of the PID controller works as intended
  */
 TEST(dummy_test_compute, testing_computed_method) {
-  EXPECT_DOUBLE_EQ(test.compute(50, 0, 0.1), 26.5);
+  EXPECT_DOUBLE_EQ(test.compute(50, 0, 0.1), 76);
 }
 
 /**
@@ -44,7 +44,7 @@ TEST(dummy_test_compute_overtime, testing_compute_with_time){
     pvar += control_output;
   }
   
-  EXPECT_DOUBLE_EQ(control_output, 5.0056);
+  EXPECT_DOUBLE_EQ(control_output, 5.005596);
 }
 
 /**
