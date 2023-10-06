@@ -44,7 +44,7 @@ TEST(dummy_test_compute_overtime, testing_compute_with_time){
     pvar += control_output;
   }
   
-  EXPECT_NEAR(control_output, 5.005596, 0.000001);
+  EXPECT_NEAR(control_output, 5.005596);
 }
 
 /**
