@@ -51,7 +51,7 @@ double PID::compute(double setPoint, double pVariable, double dtime) {
   double derivative = (error - prevError) / dtime;
 
   // Calculate the control output
-  double output = Kp * error + Ki * integral + Kd * derivative;
+  double output = (Kp * error )+ (Ki * integral) + (Kd * derivative);
 
   // Update the previous error
   prevError = error;

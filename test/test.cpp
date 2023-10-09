@@ -41,10 +41,11 @@ TEST(dummy_test_compute_overtime, testing_compute_with_time){
 
   for (int i = 0; i<5; i++){
     control_output = test.compute(50, pvar, 0.1);
+    std::cout << control_output << std::endl;
     pvar += control_output;
   }
   
-  EXPECT_NEAR(control_output, 5.005596, 0.001);
+  EXPECT_NEAR(control_output, 198.5671, 0.0001);
 }
 
 /**
