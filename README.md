@@ -123,3 +123,10 @@ Delete the compile_commands.json file and run,
 ```bash
   bear -- cmake --build build/ --clean-first
 ```
+
+## cppcheck & cpplint Results
+To view cppcheck result -
+Check file "cppcheck.txt" inside the results sub-directory
+
+To view cpplint result - 
+Check file "cpplint.txt" inside the results sub-directory
