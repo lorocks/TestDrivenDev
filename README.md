@@ -30,7 +30,7 @@ Navigator: Kshitij Karnawat [GitHub](github.com/KshitijKarnawat)
 ## Discussion Notes
 
 1 - The unit tests had to be manually calculated and then compared with expected result
-<br>
+<br/>
 2 - EXPECT_DOUBLE_EQ did not work as intended thus EXPECT_NEAR had to be used
 
 ## UML Diagrams
