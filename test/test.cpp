@@ -1,26 +1,32 @@
 /**
  * @file test.cpp
  * @author Lowell Lobo
+ * @author @abhimanyu-saxena
+ * @author @KshitijKarnawat
  * @brief Defines unit tests to be run and verified using GitHub Actions
  * It helps in testing the PID controller class design
  * @version 0.1
  * @date 2023-10-02
- * 
+ *
  * @copyright Copyright (c) 2023
- * 
+ *
  */
+
 #include <gtest/gtest.h>
+
 #include "pid.hpp"
 
 /**
- * @brief Global declaration of a PID controller test object to be used in testing
- * 
+ * @brief Global declaration of a PID controller test object to be used in
+ * testing
+ *
  */
 PID test(0.5, 0.2, 0.1);
 
 /**
  * @brief Construct a new TEST object
- * The test object checks to see if the compute method of the PID controller works as intended
+ * The test object checks to see if the compute method of the PID controller
+ * works as intended
  */
 TEST(dummy_test_compute, testing_computed_method) {
   EXPECT_DOUBLE_EQ(test.compute(50, 0, 0.1), 76);
@@ -28,23 +34,24 @@ TEST(dummy_test_compute, testing_computed_method) {
 
 /**
  * @brief Construct a new TEST object
- * The test object checks the compute method after 5 PID loops with given parameters
- * 
+ * The test object checks the compute method after 5 PID loops with given
+ * parameters
+ *
  */
-TEST(dummy_test_compute_overtime, testing_compute_with_time){
+TEST(dummy_test_compute_overtime, testing_compute_with_time) {
   /**
    * @brief Temporary varaibles to store the control output and process variable
-   * 
+   *
    */
   double control_output;
   double pvar = 0;
 
-  for (int i = 0; i<5; i++){
+  for (int i = 0; i < 5; i++) {
     control_output = test.compute(50, pvar, 0.1);
     std::cout << control_output << std::endl;
     pvar += control_output;
   }
-  
+
   EXPECT_NEAR(control_output, 198.5671, 0.0001);
 }
 
@@ -71,5 +78,3 @@ TEST(dummy_test_getKd_value, testing_get_methods) {
 TEST(dummy_test_getKi_value, testing_get_methods) {
   EXPECT_EQ(test.getKi(), 0.2);
 }
-
-
